@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Informacion de contacto</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="primerApellido">Primer apellido</label>
+                        <input type="text" name="primerApellido" id="primerApellido">
+                    </div>
+                    <div>
+                        <label for="segundoApellido">Segundo Apellido</label>
+                        <input type="text" name="segundoApellido" id="segundoApellido">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono</label>
+                        <input type="text" name="telefono" id="telefono">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Resetear">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Primer Apellido</th>
+                                <th>Segundo Apellido</th>
+                                <th>Email</th>
+                                <th>Telefono</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
